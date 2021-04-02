@@ -1,0 +1,21 @@
+void main[]
+{
+    int n;
+    int lt = 0;
+    int rt = 1;
+    scan[n];
+
+    if[n > 0]
+    {
+        print[lt];
+    }
+    if[n > 1]
+    {
+        print[rt];
+    }
+
+    while[n > 2]
+    {
+        n --;
+    }
+}

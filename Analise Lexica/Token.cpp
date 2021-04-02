@@ -86,4 +86,6 @@ std::string Token::getString(TokenType t, std::map<int , std::string>enumToStrin
 		enumToString[stringCons] = "stringCons";
 		enumToString[reReturn] = "reReturn";
 	}
+
+	return "";
 }

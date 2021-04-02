@@ -12,12 +12,12 @@ int main(int argc, char *argv[])
 	
     std::map<int, std::string>mp;
 	
-    analise.init(std::string("Iziput.txt"));
+    analise.init(std::string(argv[1]));
 
     while(analise.hasToken())
     {
-		Token t = analise.nextToken();
-		print(t, mp);
+      Token t = analise.nextToken();
+      print(t, mp);
     }
     
 	return 0;

@@ -1,5 +1,5 @@
 
-void fibonacci[limite]
+void fibonacci[int limite]
 {
     if[limite == 0]
     {
@@ -53,11 +53,13 @@ void fibonacci[limite]
 }
 
 
-void main[]
+int main[]
 {
     int limite;
    
     scan[limite];
 
     fibonacci[limite];
+
+    return 0;
 }

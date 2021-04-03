@@ -1,21 +1,63 @@
+
+void fibonacci[limite]
+{
+    if[limite == 0]
+    {
+        print["Sem elementos menores que 0"];
+    }
+    else if[limite == 1 || limite == 2]
+    {
+        if[limite == 1]
+        {
+            print["Sem elementos menores que 1"];
+        }
+        else
+        {
+            print["1,1"];
+        }
+    }
+    else
+    {
+        int i;
+        int fib1 = 1;
+        int fib2 = 2;
+        int soma;
+        int sequencia(limite);
+
+        sequencia(0) = fib1;
+        sequencia(1) = fib2;
+
+        i = 3;
+        while[i <= limite]
+        {
+            soma = fib1 + fib2;
+            fib1 = fib2;
+            fib2 = soma;
+            sequencia(i-1) = soma;
+            i ++;
+        }
+
+        i = 0;
+        while[sequencia(i) < limite]
+        {
+            print[sequencia(i)];
+            
+            if[sequencia(i + 1) < limite]
+            {
+                print[","];
+            }
+
+            i ++;
+        }
+    }
+}
+
+
 void main[]
 {
-    int n;
-    int lt = 0;
-    int rt = 1;
-    scan[n];
+    int limite;
+   
+    scan[limite];
 
-    if[n > 0]
-    {
-        print[lt];
-    }
-    if[n > 1]
-    {
-        print[rt];
-    }
-
-    while[n > 2]
-    {
-        n --;
-    }
+    fibonacci[limite];
 }

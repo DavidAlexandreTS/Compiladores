@@ -1,45 +1,43 @@
-int vetor(100);
 int n;
+int vetor(400);
 
 void shellSort[]
 {
-    int h = 1;
-    while[h < n]
-    {
-        h = h*3+1;
-    }
+    int j = 0;
+    int aux;
 
-    h = h/3;
-
-    int temp, j;
-    while[h > 0]
+    for[j; 0; n]
     {
-        for[i = h; i < n; i++]
+       if[vetor(j) > vetor(j + 1)]
         {
-            temp = a(i);
-            j = i;
-            while[j >= h && a(j - h) > temp]
-            {
-                a(j) = a(j - h);
-                j = j - h;
-            }
-            a(j) = temp;
+            aux = vetor(j);
+            vetor(j) = vetor(j + 1);
+            vetor(j + 1) = aux;
         }
-        h = h/2;
     }
-
+}
 
 void main[]
 {
-    int i;
+    int i = 0;
     scan[n];
-    for[ i; 0; n]
+
+    for[i; 0; n]
     {
         scan[vetor(i)];
     }
 
+    i = 0;
+    while[i < n]
+    {
+        print[vetor(i)];
+        print[" "];
+    }
+
     shellSort[];
-    for[i = 0;i < n; i++]
+   
+    i = 0;
+    while[i < n]
     {
         print[vetor(i)];
         print[" "];

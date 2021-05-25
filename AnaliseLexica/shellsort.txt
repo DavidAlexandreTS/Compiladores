@@ -1,0 +1,45 @@
+int n;
+int vetor(400);
+
+void shellSort[]
+{
+    int j = 0;
+    int aux;
+
+    for[j; 0; n]
+    {
+       if[vetor(j) > vetor(j + 1)]
+        {
+            aux = vetor(j);
+            vetor(j) = vetor(j + 1);
+            vetor(j + 1) = aux;
+        }
+    }
+}
+
+void main[]
+{
+    int i = 0;
+    scan[n];
+
+    for[i; 0; n]
+    {
+        scan[vetor(i)];
+    }
+
+    i = 0;
+    while[i < n]
+    {
+        print[vetor(i)];
+        print[" "];
+    }
+
+    shellSort[];
+   
+    i = 0;
+    while[i < n]
+    {
+        print[vetor(i)];
+        print[" "];
+    }
+}
